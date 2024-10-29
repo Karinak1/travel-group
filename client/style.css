@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background:black;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.nav-links{
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a{
+  padding: 10px 40px;
+  border: 1px white solid;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#signup-btn{
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.background-image img{
+  width: 100%;
+  height:100%;
+}
+
+.background-image{
+  width: 100vw;
+  height: 400px;
+  background-image: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a:hover{
+  background: #ffffe6;
+  color: black;
+}
+
+#destinations-Sec{
+  display: flex;
+  padding: 50px;
+}
+
+.destinations{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  width: 100%;
+  height: 600px;
+}
+
+.destinations > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
