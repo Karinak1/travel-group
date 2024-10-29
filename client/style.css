@@ -21,8 +21,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 0px 50px;
+  font-weight: bolder;
+  gap: 0.5em;
+  font-size: 2em;
+  color: azure;
+}
+.logo img {
+  border-radius: 10px;
 }
 
 .nav-links {
