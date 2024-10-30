@@ -128,6 +128,10 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
+.cities-container {
+  display: flex;
+  flex-direction: row;
+}
 .cities > div {
   position: relative;
   margin: 5px;
@@ -149,6 +153,5 @@ h2 {
   .cities,
   .places {
     display: block;
-    background-color: blue;
   }
 }
