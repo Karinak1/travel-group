@@ -21,7 +21,7 @@ app.get("/travel", async function (request, response) {
 app.post("/travel", async (request, response) => {
   const { name, city, review } = request.body;
   const result = await db.query(
-    "INSERT INTO travel (name, city, review) VALUES ($1, $2, $3) RETURNING *",
+    "INSERT INTO travel (name, city, review) VALUES ($1, $2, $3)",
     [name, city, review]
   );
   response.json(result.rows);
