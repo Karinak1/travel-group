@@ -1,4 +1,4 @@
-const imageBg = document.getElementsByClassName('background-image');
+
 
 const backgroundImages = [
   'https://static.independent.co.uk/2023/08/02/10/iStock-1248448159%20%281%29.jpg',
@@ -17,30 +17,33 @@ setInterval(changeBg, 3000);
 
 const travelContainer = document.getElementsByClassName('places'); //form div className
 async function SubmitReview(event) {
-  event.preventDefault();
-  const formData = new FormData(formInfo);
-  const body = Object.fromEntries(formData);
+    event.preventDefault();
+    const formData = new FormData(formInfo);
+    const body = Object.fromEntries(formData);
+    console.log(body)
+
+
+    async function getTravel() {
+
+        const response = await fetch('http://localhost:8080/travel', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        const travel = await response.json();
+        console.log(travel)
+        // for (let i = 0; i < travel.length; i++) {
+        //   const name = travel[i].name;
+        //   const review = travel[i].review;
+        //   const city = travel[i].city;
+
+        //   const p = document.createElement('p');
+
+        //   p.textContent = `${city} ${review} by ${name}  `;
+
+        //   places.appendChild(p);
+        // }
+    }
+    // getTravel();
 }
 
-async function getTravel() {
-  const response = await fetch('http://localhost:8080/travel', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const guests = await response.json();
-}
-
-for (let i = 0; i < travel.length; i++) {
-  const name = travel[i].name;
-  const review = travel[i].review;
-  const city = travel[i].city;
-
-  const p = document.createElement('p');
-
-  p.textContent = `${city} ${review} by ${name}  `;
-
-  places.appendChild(p);
-}
-
-getTravel();
