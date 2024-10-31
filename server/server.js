@@ -24,7 +24,8 @@ app.post("/travel", async (request, response) => {
     "INSERT INTO travel (name, city, review) VALUES ($1, $2, $3)",
     [name, city, review]
   );
-  response.json(result.rows);
+  const newResult = await db.query("SELECT * FROM travel")
+  response.json(newResult.rows);
 });
 
 app.listen(8080, () => console.log("App is running on PORT 8080"));
