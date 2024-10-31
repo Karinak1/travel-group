@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New York - BAKK Tourism</title>
+    <title>Tokyo - BAKK Tourism</title>
     <link rel="stylesheet" href="./pageTokyo.style.css" />
     <script src="./pageTokyo.app.js" defer></script>
   </head>
   <body>
     <div class="info-link">
       <div class="logo">
-        <img src="../BAKK.jpg" width="200px" height="150px" alt="company-logo" />
+        <img
+          src="../BAKK.jpg"
+          width="200px"
+          height="150px"
+          alt="company-logo"
+        />
         <p>Tokyo - BAKK Tourism</p>
       </div>
       <div class="nav-link">
@@ -23,62 +28,35 @@
     </div>
 
     <div class="container-cities">
-      <div data-city="Mario Carts">
+      <div>
         <h2>Mario Carts</h2>
         <img src="./mario-carts.jpeg" alt="Mario Carts" />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('carts')">Like</button>
-          <span class="like-count" id="carts-likes">0 Likes</span>
-        </div>
       </div>
-      <div data-city="Meuseum">
+      <div>
         <h2>Meuseum</h2>
-        <img
-          src="./meusem.jpg"
-          alt="Meuseum"
-        />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('meusem')">Like</button>
-          <span class="like-count" id="muesem-likes">0 Likes</span>
-        </div>
+        <img src="./meusem.jpg" alt="Meuseum" />
       </div>
-      <div data-city="Mount Takao">
+      <div>
         <h2>Mount Takao</h2>
         <img src="./mount-takao.jpg" alt="Mount Takao" />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('mount')">Like</button>
-          <span class="like-count" id="mount-likes">0 Likes</span>
-        </div>
       </div>
-      <div data-city="Night Skyline">
+      <div>
         <h2>Night Skyline</h2>
         <img src="./night-skyline.jpg" alt="Night Skyline" />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('skyline')">Like</button>
-          <span class="like-count" id="skyline-likes">0 Likes</span>
-        </div>
       </div>
-      <div data-city="Sea Trip">
+      <div>
         <h2>Sea Trip</h2>
         <img src="./sea-trip.jpg" alt="Sea Trip" />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('sea')">Like</button>
-          <span class="like-count" id="sea-likes">0 Likes</span>
-        </div>
       </div>
-      <div data-city="Senso Ji">
+      <div>
         <h2>Senso Ji</h2>
         <img src="./senso-ji.jpeg" alt="Senso Ji" />
-        <div class="like-container">
-          <button class="like-btn" onclick="likeImage('senso')">Like</button>
-          <span class="like-count" id="senso-likes">0 Likes</span>
-        </div>
       </div>
     </div>
 
     <div class="review-section">
       <form id="review-form">
-        <h2>Review LA</h2>
+        <h2>Review Tokyo</h2>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="text" name="city" placeholder="City" required />
         <textarea
