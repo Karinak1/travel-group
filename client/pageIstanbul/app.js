@@ -8,13 +8,16 @@ document
     const review = this.review.value.trim();
 
     async function getReview(name, city, review) {
-      const response = await fetch("http://localhost:8080/travel", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, city, review }),
-      });
+      const response = await fetch(
+        "https://travel-group-server.onrender.com/travel",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, city, review }),
+        }
+      );
       const messages = await response.json();
       for (let i = 0; i < messages.length; i++) {
         const name = messages[i].name;
