@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LA - BAKK Tourism</title>
+    <link rel="stylesheet" href="./pageLA.style.css" />
+    <script src="./pageLA.app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="info-link">
+      <div class="logo">
+        <img src="./BAKK.jpg" width="200px" height="150px" alt="company-logo" />
+        <p>BAKK Tourism</p>
+      </div>
+      <div class="nav-link">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="container-cities">
+      <div>
+        <h2>Downtown Hollywood</h2>
+        <img src="./LA-pictures/LA-1.jpg" alt="Hollywood Street" />
+      </div>
+      <div>
+        <h2>Hollywood Palm Trees</h2>
+        <img src="./LA-pictures/LA-2.jpg" alt="Hollywood Palm Trees" />
+      </div>
+      <div>
+        <h2>Hollywood Starwalk</h2>
+        <img src="./LA-pictures/LA-3.jpg" alt="Hollywood Starwalk" />
+      </div>
+      <div>
+        <h2>LA Sky Line</h2>
+        <img src="./LA-pictures/LA-4.jpg" alt="LA Streets" />
+      </div>
+      <div>
+        <h2>Staples Center</h2>
+        <img src="./LA-pictures/LA-5.jpg" alt="Staples Center" />
+      </div>
+      <div>
+        <h2>Muscle Beach</h2>
+        <img src="./LA-pictures/LA-6.jpg" alt="Muscle Beach" />
+      </div>
+    </div>
+
+    <div class="review-section">
+      <form id="review-form">
+        <h2>Review LA</h2>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="city" placeholder="City" required />
+        <textarea
+          name="review"
+          placeholder="Write your review"
+          required
+        ></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <div class="reviews">
+        <h2>Reviews</h2>
+        <ul id="review-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
