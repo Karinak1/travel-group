@@ -105,6 +105,11 @@ body {
   margin-bottom: 10px;
 }
 
+img:hover{
+  transition: width 2s; 
+  width: 350px;
+}
+
 @media only screen and (max-width: 600px) {
   .container-cities {
     flex-direction: column;
