@@ -24,29 +24,61 @@
     </div>
 
     <div class="container-cities">
-      <div>
+      <div data-city="Berlin Wall">
         <h2>Berlin Wall</h2>
         <img src="./berlin-pictures/berlin-1.jpg" alt="Berlin view 1" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('berlin-wall')">
+            Like
+          </button>
+          <span class="like-count" id="berlin-wall-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Brandenburg Gate">
         <h2>Brandenburg Gate</h2>
         <img src="./berlin-pictures/berlin-2.jpg" alt="Berlin view 2" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('brandenburg')">
+            Like
+          </button>
+          <span class="like-count" id="brandenburg-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Berlin TV Tower">
         <h2>Berlin TV Tower</h2>
         <img src="./berlin-pictures/berlin-3.jpg" alt="Berlin view 3" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('tv-tower')">Like</button>
+          <span class="like-count" id="tv-tower-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Berlin Cathedral">
         <h2>Berlin Cathedral</h2>
         <img src="./berlin-pictures/berlin-4.jpg" alt="Berlin view 4" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('cathedral')">
+            Like
+          </button>
+          <span class="like-count" id="cathedral-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Berlin Oberbaum Bridge">
         <h2>Berlin Oberbaum Bridge</h2>
         <img src="./berlin-pictures/berlin-5.jpg" alt="Berlin view 5" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('oberbaum')">Like</button>
+          <span class="like-count" id="oberbaum-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Berlin Night Skyline">
         <h2>Berlin Night Skyline</h2>
         <img src="./berlin-pictures/berlin-6.jpg" alt="Berlin view 6" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('night-skyline')">
+            Like
+          </button>
+          <span class="like-count" id="night-skyline-likes">0 Likes</span>
+        </div>
       </div>
     </div>
 
@@ -64,6 +96,7 @@
       </form>
       <div class="reviews">
         <h2>Reviews</h2>
+        <ul id="review-list"></ul>
       </div>
     </div>
   </body>
