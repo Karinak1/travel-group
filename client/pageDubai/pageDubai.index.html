@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dubai - BAKK Tourism</title>
+    <title>Berlin - BAKK Tourism</title>
     <link rel="stylesheet" href="./pageDubai.style.css" />
     <script src="./pageDubai.app.js" defer></script>
   </head>
@@ -24,35 +24,77 @@
     </div>
 
     <div class="container-cities">
-      <div>
+      <div data-city="Burj-Khalifa">
         <h2>Burj-Khalifa</h2>
-        <img src="./dubai-pictures/Burj-Khalifa-Dubai.jpg" alt="Burj-Khalifa" />
+        <img
+          src="./dubai-pictures/Burj-Khalifa-Dubai.jpg"
+          alt="Berlin view 1"
+        />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('Burj-Khalifa')">
+            Like
+          </button>
+          <span class="like-count" id="Burj-Khalifa-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Shopping mall">
         <h2>Shopping mall</h2>
         <img src="./dubai-pictures/Dubai-Mall-5.jpg" alt="Shopping mall" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('Shopping mall')">
+            Like
+          </button>
+          <span class="like-count" id="Shopping mall-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Sandboarding">
         <h2>Sandboarding</h2>
         <img src="./dubai-pictures/OIP.jpg" alt="Sandboarding" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('Sandboarding')">
+            Like
+          </button>
+          <span class="like-count" id="Sandboarding">0 Likes</span>
+        </div>
       </div>
-      <div>
+      <div data-city="Swimming with dolphins">
         <h2>Swimming with dolphins</h2>
         <img src="./dubai-pictures/R (1).jpg" alt="Swimming with dolphins" />
+        <div class="like-container">
+          <button
+            class="like-btn"
+            onclick="likeImage('Swimming with dolphins')"
+          >
+            Like
+          </button>
+          <span class="like-count" id="Swimming with dolphins-likes"
+            >0 Likes</span
+          >
+        </div>
       </div>
-      <div>
+      <div data-city="Atlantis">
         <h2>Atlantis</h2>
-        <img src="./dubai-pictures/R.jpg" alt="Atlantis" />
+        <img src="./dubai-pictures/R.jpg" alt="Berlin view 5" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('Atlantis')">Like</button>
+          <span class="like-count" id="Atlantis-likes">0 Likes</span>
+        </div>
       </div>
-      <div>
-        <h2>Wild Wadi</h2>
-        <img src="./dubai-pictures/R.webp" alt="Wild Wadi" />
+      <div data-city="Wald wadi">
+        <h2>Wald wadi</h2>
+        <img src="./dubai-pictures/R.webp" alt="Wald wadi" />
+        <div class="like-container">
+          <button class="like-btn" onclick="likeImage('Wald wadi')">
+            Like
+          </button>
+          <span class="like-count" id="Wald wadi-likes">0 Likes</span>
+        </div>
       </div>
     </div>
 
     <div class="review-section">
       <form id="review-form">
-        <h2>Review Dubai</h2>
+        <h2>Review Berlin</h2>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="text" name="city" placeholder="City" required />
         <textarea
