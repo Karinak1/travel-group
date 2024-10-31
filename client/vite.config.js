@@ -10,6 +10,7 @@ export default defineConfig({
         pageBerlin: resolve(__dirname, "pageBerlin/pageBerlin.index.html"),
         pageNewyork: resolve(__dirname, "pageNewyork/pageNewyork.index.html"),
         pageDubai: resolve(__dirname, "pageDubai/pageDubai.index.html"),
+        pageEgypt: resolve(__dirname, "pageEgypt/pageEgypt.index.html"),
       },
     },
   },
