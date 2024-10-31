@@ -9,9 +9,12 @@ export default defineConfig({
         pageLA: resolve(__dirname, "pageLA/pageLA.index.html"),
         pageBerlin: resolve(__dirname, "pageBerlin/pageBerlin.index.html"),
         pageNewyork: resolve(__dirname, "pageNewyork/pageNewyork.index.html"),
-        pageDoha: resolve(__dirname, "pageDoha/index.html"),
-        pageCairo: resolve(__dirname, "pageCairo/index.html"),
-        pageIstanbul: resolve(__dirname, "pageIstanbul/index.html"),
+        pageDoha: resolve(__dirname, "pageDoha/pageDoha.index.html"),
+        pageCairo: resolve(__dirname, "pageCairo/pageCairo.index.html"),
+        pageIstanbul: resolve(
+          __dirname,
+          "pageIstanbul/pageIstanbul.index.html"
+        ),
         pageBangkok: resolve(__dirname, "./pageBangkok/pageBangkok.index.html"),
         pageTokyo: resolve(__dirname, "./pageTokyo/pageTokyo.index.html"),
         pageSingapore: resolve(
