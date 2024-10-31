@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berlin - BAKK Tourism</title>
+    <link rel="stylesheet" href="./pageBerlin.style.css" />
+    <script src="./pageBerlin.app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="info-link">
+      <div class="logo">
+        <img src="./BAKK.jpg" width="200px" height="150px" alt="company-logo" />
+        <p>BAKK Tourism</p>
+      </div>
+      <div class="nav-link">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="container-cities">
+      <div>
+        <h2>Berlin Wall</h2>
+        <img src="./berlin-pictures/berlin-1.jpg" alt="Berlin view 1" />
+      </div>
+      <div>
+        <h2>Brandenburg Gate</h2>
+        <img src="./berlin-pictures/berlin-2.jpg" alt="Berlin view 2" />
+      </div>
+      <div>
+        <h2>Berlin TV Tower</h2>
+        <img src="./berlin-pictures/berlin-3.jpg" alt="Berlin view 3" />
+      </div>
+      <div>
+        <h2>Berlin Cathedral</h2>
+        <img src="./berlin-pictures/berlin-4.jpg" alt="Berlin view 4" />
+      </div>
+      <div>
+        <h2>Berlin Oberbaum Bridge</h2>
+        <img src="./berlin-pictures/berlin-5.jpg" alt="Berlin view 5" />
+      </div>
+      <div>
+        <h2>Berlin Night Skyline</h2>
+        <img src="./berlin-pictures/berlin-6.jpg" alt="Berlin view 6" />
+      </div>
+    </div>
+
+    <div class="review-section">
+      <form id="review-form">
+        <h2>Review Berlin</h2>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="city" placeholder="City" required />
+        <textarea
+          name="review"
+          placeholder="Write your review"
+          required
+        ></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <div class="reviews">
+        <h2>Reviews</h2>
+      </div>
+    </div>
+  </body>
+</html>
