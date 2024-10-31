@@ -17,14 +17,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 50px;
   font-weight: bolder;
   gap: 0.5em;
   font-size: 2em;
   color: azure;
 }
 .logo img {
-  border-radius: 10px;
+  border-radius: 8px;
+  width: 120px;
+  height: 80px;
 }
 
 .nav-link {
@@ -47,7 +48,7 @@ body {
 }
 
 .container-cities div {
-  flex: 1 1 30%; /* Adjusts for three items in a row */
+  flex: 1 1 30%;
   margin: 10px;
   text-align: center;
 }
@@ -59,24 +60,6 @@ body {
   border-radius: 10px;
 }
 
-/* Like button styles */
-.like-btn {
-  background-color: #4caf50; /* Green background */
-  border: none;
-  color: white; /* White text */
-  padding: 10px 20px; /* Button padding */
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 0; /* Space above and below the button */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 4px; /* Rounded corners */
-}
-
-.like-count {
-  font-weight: bold; /* Bold text for like count */
-}
-
 .review-section {
   display: flex;
   justify-content: space-between;
@@ -84,51 +67,56 @@ body {
 }
 
 .review-section form {
-  flex: 1; /* Takes up one part of the space */
+  flex: 1;
   margin-right: 20px;
   padding: 20px;
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 10px; /* Rounded corners */
-  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
 .review-section form input,
 .review-section form textarea {
-  width: 100%; /* Full width for inputs and textareas */
-  padding: 10px; /* Inner padding */
-  margin-bottom: 10px; /* Space below each input */
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 5px; /* Rounded corners */
-  box-sizing: border-box; /* Include padding in width calculation */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .review-section form button {
-  padding: 10px; /* Padding inside button */
-  background-color: rgb(24, 27, 26); /* Dark background */
-  color: white; /* White text */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px;
+  background-color: rgb(24, 27, 26);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .review-section form button:hover {
-  background-color: rgb(163, 210, 232); /* Light blue on hover */
+  background-color: rgb(163, 210, 232);
 }
 
 .reviews {
-  flex: 2; /* Takes up two parts of the space */
+  flex: 2;
   padding: 20px;
-  background-color: #fff; /* White background */
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .reviews h2 {
-  margin-bottom: 10px; /* Space below the heading */
+  margin-bottom: 10px;
+}
+
+img:hover {
+  transition: width 2s;
+  width: 350px;
 }
 
 @media only screen and (max-width: 600px) {
   .container-cities {
-    flex-direction: column; /* Stacks items vertically on small screens */
+    flex-direction: column;
   }
 }
